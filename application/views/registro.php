@@ -5,35 +5,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/librerias/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/librerias/css/styles_login.css">
-	<title>Login</title>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/librerias/css/style_registro.css">
+	<title>Registro</title>
 
 </head>
 
-  
+
     <body>
 
     
         <form action="" method="POST">
-            <h1><b>LOGIN</b></h1>
-            
+            <h1><b>REGISTRARSE</b></h1>
             <br>
-            <input type="text" placeholder="&#128100; Usuario" require>
+            <input type="text" name="nombre" placeholder="&#128100; Nombre" require>
 
-            <input type="password" placeholder="&#128273; Contraseña" require>
-            <br>
+            <input type="email" name="email" placeholder="&#128231; Correo Electronico" require>
 
-            <button type="submit" id="btn1" class="btn btn-lg btn-block">INICIAR SESIÓN</button>
+            <input type="password" name="pass1" placeholder="&#128273; Contraseña" require>
+
+            <input type="password" name="pass2" placeholder="&#128272; Confirmar contraseña" require>
+
+            <button type="submit" name="" id="btn1" class="btn btn-lg btn-block">CREAR CUENTA</button>
             
 
             <h2>________________________</h2>
-            <br>
-            <div class="piedepag">
-                No tienes una cuenta?  <a href="<?php echo base_url() . 'Registro' ?>" class="link-light"> Registrate ahora</a>
-                <br>
-                <br>
-                <a href="<?php echo base_url() . '' ?>" class="link-light">Olvidaste tu contraseña?</a>
-            </div>
+            <div class="pieregistro">
+                <a href="<?php echo base_url() . 'login' ?>" class="link-light text-center">Iniciar Sesión</a>
+            </div>        
+            <br>    
 
         </form>
 
